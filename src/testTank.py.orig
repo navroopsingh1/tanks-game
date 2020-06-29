@@ -1,0 +1,98 @@
+import random
+import pytest
+import Classes
+import pygame
+import os
+
+class TestTank:
+
+    def setup_method(self):
+        self.image = "tankpic.png"
+        self.tank = Classes.Tank(self.image, 400, 400, 1, 1)
+ 
+    
+    def test_move_right(self):
+
+        self.tank.move_right()
+
+        assert(self.tank.location_x == 410)
+        
+
+    def test_move_left(self):
+    	
+        self.tank.move_left()
+
+        assert(self.tank.location_x == 390)
+
+
+    def test_shoot(self):
+<<<<<<< HEAD
+        pass
+    	
+=======
+    	pass
+        
+
+>>>>>>> 0a63f26a25d0a8ac7c46242ca93cbc8d6c13fdc0
+
+    def test_tank_collision(self):
+        tank2 = Classes.Tank(self.image, 400, 400, 1, 1)
+        assert(self.tank.collide(tank2))
+
+
+    def test_tank_is_turn(self):
+        pass
+
+<<<<<<< HEAD
+=======
+#use these if u want
+    def out_of_bounds_right(self):
+    	pass
+    def test_player1_fire(self):
+        pass
+    def test_player1_move_turret(self):
+        pass
+    def test_player1_move_tank(self):
+        pass
+    def test_player1_raise_power(self):
+        pass
+    def test_player1_lower_power(self):
+        pass
+    def test_player2_fire(self):
+        pass
+    def test_player2_move_turret(self):
+        pass
+    def test_player2_move_tank(self):
+        pass
+    def test_player2_raise_power(self):
+        pass
+    def test_player2_lower_power(self):
+        pass
+    def test_pause_game(self):
+        pass
+    def test_continue_game_button(self):
+        pass
+    def test_quit_game_button(self):
+        pass
+>>>>>>> 0a63f26a25d0a8ac7c46242ca93cbc8d6c13fdc0
+
+
+
+
+
+
+ 
+
+
+    
+
+    
+
+  
+
+
+
+    
+
+
+
